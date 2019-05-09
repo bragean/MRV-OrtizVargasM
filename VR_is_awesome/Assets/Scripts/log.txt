@@ -1,0 +1,56 @@
+root@c2d81047340d:/# rf export 001b2445-a253-4f7c-8612-a121f923040a
+def_export init GG
+INFO:rf.commands.export:Creating Export Definition
+create export definition GG
+INFO:rf.commands.export:def create_export_definition GG
+INFO:rf.commands.export:Creating export definition for 001b2445-a253-4f7c-8612-a121f923040a
+INFO:rf.commands.export:create export model
+INFO:rf.commands.export:export set_data
+INFO:rf.commands.export:export objetc metada to postgres
+('https://marcoflores.auth0.com/oauth/token', {'client_secret': 'yq2YLweXvbdL1TVSupcEFcktkU2lJffWTx2gnRKurmNDXbNI1xxPZ9Y-et_O1YnH', 'grant_type': 'refresh_token', 'refresh_token': 'O2o_lMaL-SuDSD0JDlCPBbsU178UstTmW4ARCOGf92VjT', 'client_id': 'Yg3okhAWYvAUPXAWNknNQ9YidPnLm14V'})
+INFO:rf.commands.export:Created export definition for 001b2445-a253-4f7c-8612-a121f923040a
+INFO:rf.commands.export:the format of the bucket amigocloud-conida
+INFO:rf.commands.export:the format of the key export-definitions/001b2445-a253-4f7c-8612-a121f923040a
+INFO:rf.commands.export:Retrieving Export Definition s3://amigocloud-conida/export-definitions/001b2445-a253-4f7c-8612-a121f923040a
+get export definition GG
+INFO:rf.commands.export:Downloading export defintion s3://amigocloud-conida/export-definitions/001b2445-a253-4f7c-8612-a121f923040a
+INFO:rf.commands.export:Created Working Directory /tmp/tmpa8FCvG
+INFO:rf.commands.export:Rewriting Export Definition
+write export definition GG
+INFO:rf.commands.export:Rewrote export definition to /tmp/tmpa8FCvG/export_definition.json
+INFO:rf.commands.export:Preparing to Run Export
+INFO:rf.commands.export:local_path file:///tmp/tmpa8FCvG/export_definition.json
+run export GG
+INFO:rf.commands.export:value of exports3uri file:///tmp/tmpa8FCvG/export_definition.json
+INFO:rf.commands.export:call ls /tmp
+total 16
+drwxr-xr-x 2 root root 4096 Mar 27 23:27 hsperfdata_root
+-rw-r--r-- 1 root root  252 Feb  6 16:33 requirements.txt
+drwxr-xr-x 1 root root 4096 May  6 22:08 rf
+drwx------ 2 root root 4096 May  7 14:17 tmpa8FCvG
+INFO:rf.commands.export:call cat export s3_uri
+{"input": {"style": {"ast": {"apply": "/", "args": [{"apply": "-", "args": [{"projId": "e68da7cd-7d1d-4b99-99cb-9444e0b38db3", "band": 3, "celltype": null, "type": "projectSrc", "id": "67013aad-21c5-4e7f-b8bd-5910e92aa425", "metadata": {"histogram": null, "description": null, "breaks": null, "label": null, "classMap": null, "renderDefinition": null, "colorRamp": null}}, {"projId": "e68da7cd-7d1d-4b99-99cb-9444e0b38db3", "band": 2, "celltype": null, "type": "projectSrc", "id": "a3c93582-a086-44e8-8bdf-0b2ab69f91d0", "metadata": {"histogram": null, "description": null, "breaks": null, "label": null, "classMap": null, "renderDefinition": null, "colorRamp": null}}], "id": "fe1763d4-9b4d-4eba-9968-f7d707869d7f", "metadata": {"histogram": null, "description": null, "breaks": null, "label": null, "classMap": null, "renderDefinition": null, "colorRamp": null}}, {"apply": "+", "args": [{"projId": "e68da7cd-7d1d-4b99-99cb-9444e0b38db3", "band": 3, "celltype": null, "type": "projectSrc", "id": "67013aad-21c5-4e7f-b8bd-5910e92aa425", "metadata": {"histogram": null, "description": null, "breaks": null, "label": null, "classMap": null, "renderDefinition": null, "colorRamp": null}}, {"projId": "e68da7cd-7d1d-4b99-99cb-9444e0b38db3", "band": 2, "celltype": null, "type": "projectSrc", "id": "a3c93582-a086-44e8-8bdf-0b2ab69f91d0", "metadata": {"histogram": null, "description": null, "breaks": null, "label": null, "classMap": null, "renderDefinition": null, "colorRamp": null}}], "id": "b7315337-b4fc-45b7-951a-83f53703e76b", "metadata": {"histogram": null, "description": null, "breaks": null, "label": null, "classMap": null, "renderDefinition": null, "colorRamp": null}}], "id": "a1460c96-8377-4bf1-aad4-18a6e47093c6", "metadata": {"histogram": null, "description": null, "breaks": null, "label": null, "classMap": null, "renderDefinition": null, "colorRamp": null}}, "projectScenes": {"e68da7cd-7d1d-4b99-99cb-9444e0b38db3": [["4a7295c1-9f51-4174-b9d9-e09396a787ec", "s3://amigocloud-conida/user-uploads/auth0%7C5c61bc2a68c8156306dec05e/4a7295c1-9f51-4174-b9d9-e09396a787ec/cog.tif"], ["a2b271fb-0775-4f7d-84ac-f251b6aaa0c1", "s3://amigocloud-conida/user-uploads/auth0%7C5c61bc2a68c8156306dec05e/a2b271fb-0775-4f7d-84ac-f251b6aaa0c1/cog.tif"]]}, "ingestLocs": {}}, "resolution": 9}, "id": "001b2445-a253-4f7c-8612-a121f923040a", "output": {"crs": null, "render": {"bands": null, "operation": "id"}, "destination": "file:///tmp/tmpa8FCvG/001b2445-a253-4f7c-8612-a121f923040a.tif", "dropboxCredential": "", "rasterSize": null, "source": "s3://amigocloud-conida/user-exports/auth0%7C5c6b4924d43a264362a1325e/8ee75424-116c-4a86-9b57-4c0297463676", "crop": false}}INFO:rf.commands.export:subproces command export run
+Exception in thread "main" DecodingFailure(CNil, List())
+ERROR:rf.commands.export:Output from failed command: None
+INFO:rf.commands.export:Export failed, on try -1/3
+WARNING:rollbar:Rollbar: over rate limit, data was dropped. Payload was: '{"access_token": "3d5757249c144262831515b9000bae31", "data": {"body": {"trace": {"frames": [{"code": "return func(*args, **kwargs)", "varargspec": "args", "keywordspec": "kwargs", "filename": "/usr/local/lib/python2.7/dist-packages/rf-0.1.0-py2.7.egg/rf/utils/exception_reporting.py", "lineno": 24, "method": "func_wrapper", "locals": {"args": [], "func": "<type \'function\'>", "kwargs": {"export_id": "001b2445-a253-4f7c-8612-a121f923040a"}}}, {"code": "raise e", "filename": "/usr/local/lib/python2.7/dist-packages/rf-0.1.0-py2.7.egg/rf/commands/export.py", "argspec": ["export_id"], "lineno": 59, "method": "export", "locals": {"export_definition": {"input": {"style": {"ast": {"apply": "/", "args": [{"apply": "-", "args": [{"projId": "e68da7cd-7d1d-4b99-99cb-9444e0b38db3", "band": 3, "celltype": null, "type": "projectSrc", "id": "67013aad-21c5-4e7f-b8bd-5910e92aa425", "metadata": {"histogram": null, "description": null, "breaks": null, "label": null, "classMap": null, "renderDefinition": null, "colorRamp": null}}, {"projId": "e68da7cd-7d1d-4b99-99cb-9444e0b38db3", "band": 2, "celltype": null, "type": "projectSrc", "id": "a3c93582-a086-44e8-8bdf-0b2ab69f91d0", "metadata": {"histogram": null, "description": null, "breaks": null, "label": null, "classMap": null, "renderDefinition": null, "colorRamp": null}}], "id": "fe1763d4-9b4d-4eba-9968-f7d707869d7f", "metadata": {"histogram": null, "description": null, "breaks": null, "label": null, "classMap": null, "renderDefinition": null, "colorRamp": null}}, {"apply": "+", "args": [{"projId": "e68da7cd-7d1d-4b99-99cb-9444e0b38db3", "band": 3, "celltype": null, "type": "projectSrc", "id": "67013aad-21c5-4e7f-b8bd-5910e92aa425", "metadata": {"histogram": null, "description": null, "breaks": null, "label": null, "classMap": null, "renderDefinition": null, "colorRamp": null}}, {"projId": "e68da7cd-7d1d-4b99-99cb-9444e0b38db3", "band": 2, "celltype": null, "type": "projectSrc", "id": "a3c93582-a086-44e8-8bdf-0b2ab69f91d0", "metadata": {"histogram": null, "description": null, "breaks": null, "label": null, "classMap": null, "renderDefinition": null, "colorRamp": null}}], "id": "b7315337-b4fc-45b7-951a-83f53703e76b", "metadata": {"histogram": null, "description": null, "breaks": null, "label": null, "classMap": null, "renderDefinition": null, "colorRamp": null}}], "id": "a1460c96-8377-4bf1-aad4-18a6e47093c6", "metadata": {"histogram": null, "description": null, "breaks": null, "label": null, "classMap": null, "renderDefinition": null, "colorRamp": null}}, "projectScenes": {"e68da7cd-7d1d-4b99-99cb-9444e0b38db3": [["4a7295c1-9f51-4174-b9d9-e09396a787ec", "s3://amigocloud-conida/user-uploads/auth0%7C5c61bc2a68c8156306dec05e/4a7295c1-9f51-4174-b9d9-e09396a787ec/cog.tif"], ["a2b271fb-0775-4f7d-84ac-f251b6aaa0c1", "s3://amigocloud-conida/user-uploads/auth0%7C5c61bc2a68c8156306dec05e/a2b271fb-0775-4f7d-84ac-f251b6aaa0c1/cog.tif"]]}, "ingestLocs": {}}, "resolution": 9}, "id": "001b2445-a253-4f7c-8612-a121f923040a", "output": {"crs": null, "render": {"bands": null, "operation": "id"}, "dropboxCredential": "", "rasterSize": null, "source": "s3://amigocloud-conida/user-exports/auth0%7C5c6b4924d43a264362a1325e/8ee75424-116c-4a86-9b57-4c0297463676", "crop": false}}, "e": "<class \'subprocess.CalledProcessError\'>", "export_uri": "s3://amigocloud-conida/export-definitions/001b2445-a253-4f7c-8612-a121f923040a", "local_path": "/tmp/tmpa8FCvG/export_definition.json", "local_dir": "/tmp/tmpa8FCvG", "final_status": "FAILED", "export_id": "001b2445-a253-4f7c-8612-a121f923040a"}}], "exception": {"message": "Command \'[\'java\', \'-jar\', \'/opt/raster-foundry/jars/backsplash-export-assembly.jar\', \'-d\', \'file:///tmp/tmpa8FCvG/export_definition.json\']\' returned non-zero exit status 1", "class": "CalledProcessError"}}}, "uuid": "efe3e727-56e2-4801-98d5-b2d58952aeb8", "language": "python 2.7.16", "level": "error", "timestamp": 1557238652, "server": {"host": "c2d81047340d", "pid": 6, "argv": ["/usr/local/bin/rf", "export", "001b2445-a253-4f7c-8612-a121f923040a"]}, "environment": "production", "notifier": {"version": "0.13.11", "name": "pyrollbar"}}}'
+Traceback (most recent call last):
+  File "/usr/local/bin/rf", line 11, in <module>
+    load_entry_point('rf==0.1.0', 'console_scripts', 'rf')()
+  File "/usr/local/lib/python2.7/dist-packages/click/core.py", line 722, in __call__
+    return self.main(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/click/core.py", line 697, in main
+    rv = self.invoke(ctx)
+  File "/usr/local/lib/python2.7/dist-packages/click/core.py", line 1066, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/usr/local/lib/python2.7/dist-packages/click/core.py", line 895, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/usr/local/lib/python2.7/dist-packages/click/core.py", line 535, in invoke
+    return callback(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rf-0.1.0-py2.7.egg/rf/utils/exception_reporting.py", line 24, in func_wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rf-0.1.0-py2.7.egg/rf/commands/export.py", line 59, in export
+    raise e
+subprocess.CalledProcessError: Command '['java', '-jar', '/opt/raster-foundry/jars/backsplash-export-assembly.jar', '-d', 'file:///tmp/tmpa8FCvG/export_definition.json']' returned non-zero exit status 1
+root@c2d81047340d:/# ls
+
